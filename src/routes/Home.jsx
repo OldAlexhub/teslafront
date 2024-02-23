@@ -116,7 +116,7 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Graph One</h5>
+              <h5 className="card-title">Full Range VS. Currect Full Range</h5>
               <GraphOne />
             </div>
           </div>
@@ -124,7 +124,7 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Graph Two</h5>
+              <h5 className="card-title">Current Battery Level</h5>
               <GraphTwo />
             </div>
           </div>
@@ -135,7 +135,7 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Graph Three</h5>
+              <h5 className="card-title">Degradation In Miles</h5>
               <GraphThree />
             </div>
           </div>
@@ -143,7 +143,7 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Graph Four</h5>
+              <h5 className="card-title">Degradation Percentage</h5>
               <GraphFour />
             </div>
           </div>
