@@ -82,7 +82,7 @@ const GraphThree = () => {
         beginAtZero: true, // Starts the y-axis from 0
         title: {
           display: true,
-          text: "Battery Level",
+          text: "Miles",
         },
       },
     },
