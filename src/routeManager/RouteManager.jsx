@@ -3,6 +3,10 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import Home from "../routes/Home";
 import Login from "../routes/Login";
+import GraphOne from "../components/GraphOne";
+import GraphTwo from "../components/GraphTwo";
+import GraphThree from "../components/GraphThree";
+import GraphFour from "../components/GraphFour";
 
 const ProtectedRoute = ({ children }) => {
   const checkAuthorized = () => {
@@ -32,6 +36,39 @@ const RouteManager = () => {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="graphone"
+            element={
+              <ProtectedRoute>
+                <GraphOne />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="graphtwo"
+            element={
+              <ProtectedRoute>
+                <GraphTwo />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="graphthree"
+            element={
+              <ProtectedRoute>
+                <GraphThree />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="graphfour"
+            element={
+              <ProtectedRoute>
+                <GraphFour />
+              </ProtectedRoute>
+            }
+          />
+
           <Route path="login" element={<Login />} />
         </Route>
       </Routes>
