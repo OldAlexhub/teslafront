@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import GIF from "../images/tesla2.gif";
 import GraphOne from "../components/GraphOne";
@@ -116,7 +117,9 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Full Range VS. Currect Full Range</h5>
+              <h5 className="card-title">
+                <Link to={"/graphone"}>Full Range VS. Currect Full Range</Link>
+              </h5>
               <GraphOne />
             </div>
           </div>
@@ -124,7 +127,9 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Current Battery Level</h5>
+              <h5 className="card-title">
+                <Link to={"/graphtwo"}>Current Battery Level</Link>
+              </h5>
               <GraphTwo />
             </div>
           </div>
@@ -135,7 +140,9 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Degradation In Miles</h5>
+              <h5 className="card-title">
+                <Link to={"/graphthree"}>Degradation In Miles</Link>
+              </h5>
               <GraphThree />
             </div>
           </div>
@@ -143,7 +150,9 @@ const Home = () => {
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Degradation Percentage</h5>
+              <h5 className="card-title">
+                <Link to={"/graphfour"}>Degradation Percentage</Link>
+              </h5>
               <GraphFour />
             </div>
           </div>
@@ -154,3 +163,4 @@ const Home = () => {
 };
 
 export default Home;
+
